@@ -1,4 +1,4 @@
 ks
 ======
 
-alias ks='ls | cosway' in Haskell Shelly
+alias ks='ls | cowsay' in Haskell Shelly
