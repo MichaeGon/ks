@@ -15,13 +15,6 @@ prepare p = getHomeDirectory >>= prepare' . flip fromMaybe p . defpf
     where
         defpf x = x </> ".local" </> "bin"
         prepare' x = (x </> "ks") <$ createDirectoryIfMissing True x 
-{-
-prepare = getHomeDirectory >>= prepare'
-    where
-        prepare' p = (dstdir </> "ks") <$ createDirectoryIfMissing True dstdir
-            where
-                dstdir = p </> ".local" </> "bin"
--}
 
 parse :: [String] -> Maybe FilePath
 parse (x : xs)
