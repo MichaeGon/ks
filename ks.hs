@@ -10,4 +10,4 @@ import qualified Data.Text as T
 default (T.Text)
 
 main :: IO ()
-main = shelly $  cmd "ls" -|- cmd "cowsay -n"
+main = shelly $  cmd "ls" -|- run_ "cowsay" ["-n"]
