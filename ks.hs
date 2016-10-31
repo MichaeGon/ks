@@ -1,5 +1,5 @@
 #! /usr/bin/env stack
--- stack --resolver=lts-7.4 runghc --package=shelly
+-- stack --resolver=lts-7.6 runghc --package=shelly
 
 {-# LANGUAGE ExtendedDefaultRules, OverloadedStrings #-}
 {-# OPTIONS_GHC -fno-warn-type-defaults #-}
